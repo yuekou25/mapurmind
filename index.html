@@ -15,14 +15,14 @@
         </div>
 
         <div class="group">
-            <select id="themeSelect" title="Màu nền">
+            <select id="themeSelect">
                 <option value="light">Nền Sáng</option>
                 <option value="dark">Nền Tối</option>
                 <option value="yellow">Nền Vàng</option>
             </select>
-            <select id="patternSelect" title="Họa tiết">
-                <option value="dots">Họa tiết Chấm</option>
-                <option value="grid">Họa tiết Lưới</option>
+            <select id="patternSelect">
+                <option value="dots">Chấm bi</option>
+                <option value="grid">Lưới</option>
                 <option value="line">Kẻ ngang</option>
                 <option value="blank">Trống</option>
             </select>
@@ -33,13 +33,14 @@
             <input type="color" id="borderColor" value="#333333" title="Màu viền">
             <select id="lineStyle">
                 <option value="solid">Dây liền</option>
-                <option value="dashed">Dây đứt đoạn</option>
+                <option value="dashed">Dây đứt</option>
             </select>
         </div>
 
         <div class="group" style="margin-left: auto;">
+            <button id="btnSaveLocal" style="background: #27ae60;">💾 Lưu Web</button>
+            <button id="btnLoadLocal" style="background: #2980b9;">📂 Tải Web</button>
             <button id="btnExportImg">🖼️ Xuất Ảnh</button>
-            <button id="btnExportPDF">📄 Xuất PDF</button>
         </div>
     </div>
 
