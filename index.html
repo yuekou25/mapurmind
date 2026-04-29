@@ -5,6 +5,7 @@
     <title>Map Ur Mind - Sơ đồ tư duy</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/5.3.1/fabric.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 </head>
 <body>
     <div id="toolbar">
@@ -14,22 +15,31 @@
         </div>
 
         <div class="group">
-            <select id="themeSelect">
+            <select id="themeSelect" title="Màu nền">
                 <option value="light">Nền Sáng</option>
                 <option value="dark">Nền Tối</option>
                 <option value="yellow">Nền Vàng</option>
             </select>
-            <select id="patternSelect">
+            <select id="patternSelect" title="Họa tiết">
                 <option value="dots">Họa tiết Chấm</option>
                 <option value="grid">Họa tiết Lưới</option>
+                <option value="line">Kẻ ngang</option>
                 <option value="blank">Trống</option>
             </select>
         </div>
 
+        <div class="group" id="propertiesPanel">
+            <input type="color" id="fillColor" value="#ffffff" title="Màu nền ô">
+            <input type="color" id="borderColor" value="#333333" title="Màu viền">
+            <select id="lineStyle">
+                <option value="solid">Dây liền</option>
+                <option value="dashed">Dây đứt đoạn</option>
+            </select>
+        </div>
+
         <div class="group" style="margin-left: auto;">
-            <button id="btnSave">💾 Lưu</button>
-            <button id="btnExport">🖼️ Xuất ảnh</button>
-            <button id="btnLogout">🚪 Thoát</button>
+            <button id="btnExportImg">🖼️ Xuất Ảnh</button>
+            <button id="btnExportPDF">📄 Xuất PDF</button>
         </div>
     </div>
 
