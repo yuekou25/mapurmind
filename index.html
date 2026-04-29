@@ -1,1 +1,42 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Map Ur Mind - Sơ đồ tư duy</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/5.3.1/fabric.min.js"></script>
+</head>
+<body>
+    <div id="toolbar">
+        <div class="group">
+            <button id="btnAddNode" title="Thêm ô mới">➕ Ô mới</button>
+            <button id="btnLineMode" title="Nối các ô">🔗 Nối dây (Tắt)</button>
+        </div>
 
+        <div class="group">
+            <select id="themeSelect">
+                <option value="light">Nền Sáng</option>
+                <option value="dark">Nền Tối</option>
+                <option value="yellow">Nền Vàng</option>
+            </select>
+            <select id="patternSelect">
+                <option value="dots">Họa tiết Chấm</option>
+                <option value="grid">Họa tiết Lưới</option>
+                <option value="blank">Trống</option>
+            </select>
+        </div>
+
+        <div class="group" style="margin-left: auto;">
+            <button id="btnSave">💾 Lưu</button>
+            <button id="btnExport">🖼️ Xuất ảnh</button>
+            <button id="btnLogout">🚪 Thoát</button>
+        </div>
+    </div>
+
+    <div id="canvas-container" class="theme-light pattern-dots">
+        <canvas id="mindmapCanvas"></canvas>
+    </div>
+
+    <script type="module" src="js/canvas.js"></script>
+</body>
+</html>
